@@ -1,10 +1,17 @@
+import { Route, Switch } from "react-router";
+import "./App.scss";
+import Sidebar from "./components/Sidebar/sidebar";
 
-import './App.css';
+// Components
+import Home from "./pages/home";
 
 function App() {
   return (
-    <div className="App">
-     <h1>hello</h1>
+    <div className="app">
+      <Sidebar />
+      <div><Switch>
+        <Route path="/" component={Home}></Route>
+      </Switch> </div>
     </div>
   );
 }
