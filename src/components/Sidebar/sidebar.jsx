@@ -26,8 +26,8 @@ function Sidebar() {
           className="site-logo"
           src={Logo}
           alt="there is a site logo"
-          width="56"
-          height="56"
+          width="50"
+          height="50"
         />
       </NavLink>
       <ul className="sidebar__list">
@@ -39,7 +39,8 @@ function Sidebar() {
           </Link>
         </li>
         <li className="sidebar__item">
-          <Link
+          <Link 
+          
             className="link"
             to="/discount"
             onClick={handleAddClass}
@@ -50,18 +51,19 @@ function Sidebar() {
           </Link>
         </li>
         <li className="sidebar__item">
-          <Link
+          <Link 
             className="link"
             to="/dashboard"
             onClick={handleAddClass}
+            
           >
             <span>
-              <Dashboard />
+              <Dashboard/>
             </span>
           </Link>
         </li>
         <li className="sidebar__item">
-          <Link
+          <Link 
             className="link"
             to="/message"
             onClick={handleAddClass}
@@ -72,7 +74,7 @@ function Sidebar() {
           </Link>
         </li>
         <li className="sidebar__item">
-          <Link
+          <Link 
             className="link"
             to="/notification"
             onClick={handleAddClass}
@@ -83,7 +85,7 @@ function Sidebar() {
           </Link>
         </li>
         <li className="sidebar__item">
-          <Link
+          <Link 
             className="link"
             to="/settings"
             onClick={handleAddClass}

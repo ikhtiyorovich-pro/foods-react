@@ -1,0 +1,17 @@
+.home-content{
+    padding-left: 20px;
+}
+
+.food-list{
+    width: 100%;
+    max-width: 683px;
+    height: 550px;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 0;
+    list-style: none;
+}

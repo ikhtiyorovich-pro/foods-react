@@ -1,0 +1,17 @@
+@import "../../assets/scss/colors.scss";
+
+.food-box{
+    width: 100%;
+    max-width: 192px;
+    background-color: $main-dark-color;
+    border-radius: 16px;
+    text-align: center;
+    margin-right: 30px;
+    margin-top: 58px;
+    padding: 0 25px;
+
+    &__img{
+        margin-top: -36px;
+        border-radius: 50%;
+    }
+}

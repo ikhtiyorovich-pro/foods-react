@@ -1,0 +1,78 @@
+@import "../../../assets/scss/colors.scss";
+
+
+.home-top {
+    padding: 0 40px 0 20px;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+.user-info__name {
+    margin-bottom: 5px;
+}
+
+.user-info__form {
+    padding: 14px;
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.123);
+    border: 2px solid rgba(0, 0, 0, 0.411);
+    border-radius: 10px;
+}
+
+.user-info__input {
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.search-img {
+    fill: rgb(190, 190, 190);
+    margin-bottom: -5px;
+    padding-right: 10px;
+}
+
+.links-wrapper {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 0;
+    list-style: none;
+
+    &__navlinks {
+        position: relative;
+        text-decoration: none;
+        color: white;
+
+        &::before {
+            top: 98%;
+            position: absolute;
+            z-index: 1;
+            display: none;
+            width: 70%;
+            height: 3px;
+            content: "";
+            background-color: $main-orange;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 3px;
+        }
+    }
+
+    &__link-active{
+        color: $main-orange;
+
+        &::before {
+            display: block;
+        }
+    }
+}
